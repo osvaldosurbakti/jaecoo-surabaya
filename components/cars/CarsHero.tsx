@@ -23,20 +23,22 @@ export default function CarsHero() {
   return (
     <section className="relative min-h-[90vh] md:h-screen w-full overflow-hidden bg-black flex items-end pb-12 md:pb-24 px-5 sm:px-8 md:px-16 touch-pan-y">
       
-      {/* Container Video Background - Responsif Aspek Rasio */}
+      {/* Container Video Background Lokal - Jauh lebih cepat, stabil, & bebas buram */}
       <div className="absolute inset-0 w-full h-full pointer-events-none select-none z-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full min-w-[177.77vh] min-h-[56.25vw] aspect-video">
-          <iframe
-            className="w-full h-full scale-150 md:scale-110 object-cover opacity-60 md:opacity-70 transition-opacity duration-1000"
-            src="https://www.youtube.com/embed/TsXWHuQ-31U?autoplay=1&mute=1&loop=1&playlist=TsXWHuQ-31U&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1&playsinline=1"
-            title="JAECOO Indonesia PHEV Video Background"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          ></iframe>
-        </div>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover opacity-60 md:opacity-70 scale-105 transition-opacity duration-1000"
+        >
+          <source src="/videos/hybridsystem.webm" type="video/webm" />
+          {/* Anda bisa menambahkan fallback .mp4 di bawah ini jika suatu saat membutuhkannya */}
+          {/* <source src="/video/hybridsystem.mp4" type="video/mp4" /> */}
+        </video>
       </div>
 
-      {/* Overlay Gradasi Premium */}
+      {/* Overlay Gradasi Premium - Mengubah bg-linear-to menjadi bg-gradient-to */}
       <div className="absolute inset-0 bg-linear-to-t from-black via-black/75 md:via-black/40 to-black/40 z-10" />
       <div className="absolute inset-0 bg-linear-to-r from-black/60 via-transparent to-transparent z-10 hidden md:block" />
 
@@ -65,7 +67,7 @@ export default function CarsHero() {
         {/* Baris Tombol Komponen Tambahan & Spek Singkat */}
         <div className={`mt-6 md:mt-10 pt-4 md:pt-8 border-t border-white/10 flex flex-col md:flex-row gap-6 md:gap-8 md:items-center justify-between transition-all duration-1000 delay-300 ease-out transform ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
           
-          {/* CTA Buttons - Menumpuk penuh di mobile dan menggunakan gaya tepi tajam (rounded-none) */}
+          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto order-2 md:order-1">
             <a 
               href="#models" 
@@ -84,7 +86,8 @@ export default function CarsHero() {
           </div>
 
           {/* Mini Highlight Specs */}
-          <div className="flex justify-between md:justify-start gap-4 md:gap-8 text-white/90 order-1 md:order-2 bg-neutral-900/30 md:bg-transparent p-3 md:p-0 rounded-xl md:rounded-none border border-white/5 md:border-none backdrop-blur-xs md:backdrop-blur-none">
+          {/* rounded-xl pada mobile diubah menjadi rounded-none agar konsisten dengan bahasa desain diler */}
+          <div className="flex justify-between md:justify-start gap-4 md:gap-8 text-white/90 order-1 md:order-2 bg-neutral-900/30 md:bg-transparent p-3 md:p-0 rounded-none border border-white/5 md:border-none backdrop-blur-xs md:backdrop-blur-none">
             <div>
               <p className="text-[10px] text-gray-400 uppercase tracking-wider">Super Hybrid</p>
               <p className="text-base md:text-2xl font-bold text-emerald-400">PHEV Tech</p>
