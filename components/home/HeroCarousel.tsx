@@ -71,8 +71,8 @@ export default function HeroCarousel() {
               </div>
 
               {/* ─── DUAL LAYER OVERLAY UNTUK KETERBACAAN TEKS ─── */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent z-1" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent z-1 md:hidden" />
+              <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/40 to-transparent z-1" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent z-1 md:hidden" />
 
               {/* ─── CONTENT WITH FADE-IN ANIMATION ─── */}
               <div className="relative z-10 h-full flex items-center px-6 md:px-16 lg:px-24">
@@ -83,7 +83,7 @@ export default function HeroCarousel() {
                 >
 
                   <p className="uppercase tracking-[5px] text-xs md:text-sm font-semibold text-gray-400">
-                    Jaecoo Surabaya
+                    Jaecoo Surabaya Center
                   </p>
 
                   <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mt-4 leading-tight tracking-tight drop-shadow-lg">
