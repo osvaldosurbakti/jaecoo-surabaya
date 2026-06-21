@@ -1,12 +1,13 @@
 export const salesProfile = {
-  name: "Adryan Ryan",
+  name: "Adryan Jaecoo Center",
   position: "Jaecoo Sales Consultant",
   showroom: "Jaecoo Gubeng Surabaya",
   address: "Jl. Sulawesi No. 33-35, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281", // Alamat resmi lokasi Gubeng tersebut
   phone: "6281292081113",
-  facebook: "https://www.facebook.com/adryan.ryan.94849",
+  facebook: "https://www.facebook.com/share/17Q4QLgGHD/",
   whatsapp: "https://wa.me/6281292081113",
-  email: "rian@jaecoosurabaya.com",
+  tiktok: "tiktok.com/@jaecoosurabayacenter",
+  email: "ryan.maestro93@gmail.com",
   instagram: "https://instagram.com/jaecoo.surabaya.pusat",
   image: "/sales/rian.jpg",
   description:

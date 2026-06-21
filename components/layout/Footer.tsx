@@ -1,14 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import { SiInstagram, SiFacebook, SiWhatsapp } from "@icons-pack/react-simple-icons";
+import { SiInstagram, SiFacebook, SiWhatsapp, SiTiktok } from "@icons-pack/react-simple-icons";
 import { salesProfile } from "@/data/sales";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
+  // Memastikan fallback aman untuk tautan media sosial sales
+  const whatsappLink = salesProfile?.whatsapp || "#";
+  const instagramLink = salesProfile?.instagram || "#";
+  const facebookLink = salesProfile?.facebook || "#";
+  const tiktokLink = salesProfile?.tiktok || "#";
+
   return (
-    <footer className="bg-black border-t border-neutral-950 py-10 px-6 md:px-16 text-white relative overflow-hidden">
+    <footer className="bg-black border-t border-neutral-950 py-10 px-4 sm:px-8 md:px-16 text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col gap-10">
         
         {/* MAIN COMPACT ROW */}
@@ -38,7 +44,7 @@ export default function Footer() {
               <div className="flex gap-4 text-[11px] font-light text-neutral-400">
                 <Link href="/" className="hover:text-emerald-400 transition-colors">Home</Link>
                 <Link href="/cars" className="hover:text-emerald-400 transition-colors">Cars</Link>
-                <Link href="/contact" className="hover:text-emerald-400 transition-colors">Showroom</Link>
+                <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link>
               </div>
             </div>
 
@@ -57,9 +63,9 @@ export default function Footer() {
               <span className="text-[9px] font-bold tracking-[2px] text-neutral-600 uppercase block mb-2">
                 Connect With Sales
               </span>
-              <div className="flex items-center gap-3.5 text-neutral-500">
+              <div className="flex items-center gap-4 text-neutral-500">
                 <a 
-                  href={salesProfile.whatsapp} 
+                  href={whatsappLink} 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-emerald-400 transition-colors"
@@ -68,7 +74,7 @@ export default function Footer() {
                   <SiWhatsapp size={14} />
                 </a>
                 <a 
-                  href={salesProfile.instagram} 
+                  href={instagramLink} 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-emerald-400 transition-colors"
@@ -77,7 +83,16 @@ export default function Footer() {
                   <SiInstagram size={14} />
                 </a>
                 <a 
-                  href={salesProfile.facebook} 
+                  href={tiktokLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-emerald-400 transition-colors"
+                  aria-label="TikTok Sales"
+                >
+                  <SiTiktok size={14} />
+                </a>
+                <a 
+                  href={facebookLink} 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-emerald-400 transition-colors"

@@ -48,7 +48,7 @@ export default function CarHero({ car, isLoaded }: CarHeroProps) {
         {/* INTERACTION BUTTONS */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <a
-            href={`https://wa.me/?text=Halo%20Jaecoo%20Surabaya,%20saya%20tertarik%20dengan%20informasi%20lengkap%20dan%20Test%20Drive%20${encodeURIComponent(car.name)}`}
+            href={`https://wa.me/6281292081113?text=Halo%20Jaecoo%20Surabaya,%20saya%20tertarik%20dengan%20informasi%20lengkap%20dan%20Test%20Drive%20${encodeURIComponent(car.name)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-emerald-500 hover:bg-emerald-600 text-black py-4 px-6 text-center text-xs font-bold uppercase tracking-widest transition-all duration-300 shadow-lg shadow-emerald-950/20"

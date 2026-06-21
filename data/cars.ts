@@ -132,7 +132,8 @@ export const cars: CarType[] = [
     driveType: "FWD",
     transmission: "Single Speed",
     prices: [
-      { variant: "BEV", amount: 282500000, formatted: "Rp 282.500.000" }
+      { variant: "BEV", amount: 292500000, formatted: "Rp 292.500.000" },
+      { variant: "BEV Premium", amount: 322500000, formatted: "Rp 322.500.000" }
     ],
     specs: {
       engine: "Permanent Magnet Synchronous Motor",

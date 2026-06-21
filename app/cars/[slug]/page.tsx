@@ -32,7 +32,7 @@ export default function CarDetailPage() {
         {/* TOP NAVIGATION */}
         <div className="mb-12">
           <Link 
-            href="/#models" 
+            href="/cars" 
             className="text-xs uppercase tracking-[3px] text-neutral-400 hover:text-emerald-400 transition-colors duration-300 flex items-center gap-2 group w-fit"
           >
             <span className="group-hover:-translate-x-1 transition-transform duration-300">←</span> Kembali ke Lini Kendaraan

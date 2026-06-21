@@ -7,7 +7,7 @@ export const carouselData = [
     imageMobile: "/carousel/gambar1.jpg", 
     imageDesktop: "/carousel/gambar1.jpg", // Siapkan aset landscape untuk desktop
     buttonText: "Explore JAECOO J8",
-    href: "/cars/jaecoo-j8",
+    href: "/cars/jaecoo-j8-ardis",
     badge: "Official Launching"
   },
   {
