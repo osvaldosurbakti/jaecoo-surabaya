@@ -43,7 +43,7 @@ export default function CarsCTA() {
 
         {/* SUPPORTING TEXT */}
         <p className="text-neutral-400 text-xs md:text-base font-light max-w-lg mx-auto leading-relaxed mb-10 md:mb-12 px-2 md:px-0">
-          Rasakan langsung sensasi berkendara premium dan teknologi mutakhir. Jadwalkan sesi *private test drive* Anda bersama <strong className="font-semibold text-neutral-200">Jaecoo Surabaya Center</strong> hari ini.
+          Rasakan langsung sensasi berkendara premium dan teknologi mutakhir. Jadwalkan sesi *private test drive* Anda bersama <strong className="font-semibold text-neutral-200">Jaecoo Jatim</strong> hari ini.
         </p>
 
         {/* PREMIUM INTERACTIVE CTA BUTTON */}

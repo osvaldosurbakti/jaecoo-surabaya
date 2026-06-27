@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-2">
               <span className="h-1.5 w-1.5 bg-emerald-500 rounded-full" />
               <h2 className="font-black text-xs tracking-[4px] uppercase">
-                JAECOO <span className="text-emerald-400 font-light">SURABAYA CENTER</span>
+                JAECOO <span className="text-emerald-400 font-light">JATIM</span>
               </h2>
             </div>
             <p className="text-neutral-600 text-[11px] font-light leading-relaxed">
@@ -110,7 +110,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-neutral-600 tracking-wider font-light">
           
           <div className="flex flex-wrap justify-center sm:justify-start items-center gap-x-3 gap-y-1">
-            <span>© {currentYear} JAECOO SURABAYA CENTER.</span>
+            <span>© {currentYear} JAECOO JATIM.</span>
             <span className="hidden sm:inline text-neutral-900">|</span>
             <Link 
               href="/privacy-policy" 

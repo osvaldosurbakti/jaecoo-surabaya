@@ -23,26 +23,31 @@ export default function SalesContact() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-12 gap-8 md:gap-16 items-center">
           
-          {/* SISI KIRI: PREMIUM IMAGE CONTAINER */}
-          <div className="lg:col-span-5 relative group order-first">
-            {/* Architectural Border Accents */}
-            <div className="absolute -top-2 -left-2 md:-top-3 md:-left-3 w-4 h-4 md:w-6 md:h-6 border-t border-l border-neutral-800 group-hover:border-emerald-500/30 transition-colors duration-500" />
-            <div className="absolute -bottom-2 -right-2 md:-bottom-3 md:-right-3 w-4 h-4 md:w-6 md:h-6 border-b border-r border-neutral-800 group-hover:border-emerald-500/30 transition-colors duration-500" />
-            
-            {/* Mengubah tinggi kontainer foto di mobile dari h-120 menjadi h-96 agar proporsional */}
-            <div className="relative h-96 md:h-145 w-full bg-neutral-900 border border-neutral-900 p-1.5 md:p-2 overflow-hidden">
-              <div className="relative w-full h-full overflow-hidden">
-                <Image
-                  src={salesProfile.image}
-                  alt={salesProfile.name}
-                  fill
-                  sizes="(max-w-7xl) 100vw"
-                  priority
-                  className="object-cover filter grayscale hover:grayscale-0 transition-all duration-700 ease-out scale-100 group-hover:scale-102"
-                />
-              </div>
-            </div>
-          </div>
+{/* ─── SISI KIRI: PREMIUM IMAGE CONTAINER ─── */}
+<div className="lg:col-span-5 relative group order-first">
+  {/* Architectural Border Accents */}
+  <div className="absolute -top-2 -left-2 md:-top-3 md:-left-3 w-4 h-4 md:w-6 md:h-6 border-t border-l border-neutral-800 group-hover:border-emerald-500/30 transition-colors duration-500" />
+  <div className="absolute -bottom-2 -right-2 md:-bottom-3 md:-right-3 w-4 h-4 md:w-6 md:h-6 border-b border-r border-neutral-800 group-hover:border-emerald-500/30 transition-colors duration-500" />
+  
+  {/* 
+    PERBAIKAN DI SINI:
+    Menghapus h-96 dan md:h-145, lalu menggantinya dengan aspect-[1672/941] 
+    agar kontainer mengikuti proporsi asli gambar lanskap secara dinamis.
+  */}
+  <div className="relative aspect-1672/941 w-full bg-neutral-900 border border-neutral-900 p-1.5 md:p-2 overflow-hidden">
+    <div className="relative w-full h-full overflow-hidden">
+      <Image
+        src={salesProfile.image}
+        alt={salesProfile.name}
+        fill
+        sizes="(max-width: 1024px) 100vw, 500px"
+        priority
+        /* Menggunakan object-cover yang sekarang sudah aman karena rasio kontainer dan gambar sudah sama persis */
+        className="object-cover filter grayscale hover:grayscale-0 transition-all duration-700 ease-out scale-100 group-hover:scale-102"
+      />
+    </div>
+  </div>
+</div>
 
           {/* SISI KANAN: EXECUTIVE PROFILE TEXT */}
           <div className="lg:col-span-7 relative z-10">

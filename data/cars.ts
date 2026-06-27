@@ -46,7 +46,7 @@ export const cars: CarType[] = [
       "Flagship SUV dengan teknologi SHS Plug-in Hybrid dan sistem ARDIS cerdas untuk kenyamanan berkendara kasta tertinggi.",
     description:
       "Jaecoo J8 SHS-P ARDIS menghadirkan kombinasi performa buas, kemewahan kabin layaknya jet pribadi, dan teknologi pintar dalam sebuah SUV premium dengan kabin luas serta fitur keselamatan modern.",
-    image: "/cars/j8-shs-p-ardis.jpg",
+    image: "/cars/j8-shs-ardis-new.jpg",
     features: [
       "SHS Plug-in Hybrid Technology (Triple-Engine Setup)",
       "ARDIS (All-Road Drive Intelligent System) dengan 7 Mode Berkendara",
@@ -86,7 +86,7 @@ export const cars: CarType[] = [
       "SUV premium bensin dengan desain anggun, mesin turbo bertenaga, dan kemewahan interior tanpa batas.",
     description:
       "Jaecoo J8 ARDIS menawarkan kenyamanan kelas premium dengan teknologi pintar, ruang kabin luas 7-seater, dan fitur keselamatan mutakhir untuk perjalanan modern.",
-    image: "/cars/j8-ardis.jpg",
+    image: "/cars/j8.jpg",
     features: [
       "Powerful 2.0 TGDI Engine",
       "ARDIS (All-Road Drive Intelligent System)",
@@ -121,7 +121,7 @@ export const cars: CarType[] = [
       "SUV full elektrik (BEV) modern dengan desain futuristik, lincah, dan ramah lingkungan untuk mobilitas urban masa depan.",
     description:
       "Jaecoo J5 EV menghadirkan pengalaman berkendara elektrik murni dengan efisiensi energi yang tinggi, desain stylish, kabin minimalis modern, dan asisten berkendara pintar.",
-    image: "/cars/j5-ev.jpg",
+    image: "/cars/j5.jpg",
     features: [
       "100% Battery Electric Vehicle (Zero Emission)",
       "Futuristic Eco-Friendly Design",
@@ -156,7 +156,7 @@ export const cars: CarType[] = [
       "SUV tangguh dengan pilihan opsi mesin Super Hybrid System (SHS) yang hemat energi atau performa All-Wheel Drive (AWD).",
     description:
       "Jaecoo J7 menawarkan keseimbangan sempurna antara mobilitas kota yang pintar dan ketangguhan semi off-road. Tersedia dalam varian Plug-in Hybrid (SHS) untuk efisiensi radikal, serta varian bensin mekanis AWD untuk cengkeraman medan tangguh.",
-    image: "/cars/j7-shs-p.jpg",
+    image: "/cars/j7.jpg",
     features: [
       "Pilihan Mesin SHS-P (Hybrid) atau AWD Bensin",
       "14.8-inch Center Console Smart Display",

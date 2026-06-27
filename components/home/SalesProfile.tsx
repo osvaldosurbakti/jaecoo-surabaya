@@ -22,21 +22,21 @@ export default function SalesProfile() {
 
   return (
     <section id="consultant" className="py-16 md:py-24 px-5 md:px-12 bg-neutral-950 text-white overflow-hidden">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+      <div className="max-w-12xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
         
         {/* ─── IMAGE / FALLBACK AVATAR CONTAINER ─── */}
-        <div className="relative aspect-4/5 md:aspect-auto md:h-125 w-full rounded-3xl overflow-hidden bg-linear-to-b from-neutral-900 to-neutral-950 border border-neutral-800/80 flex items-center justify-center group shadow-2xl">
-          
-          {hasImage ? (
-            <Image
-              src={salesProfile.image}
-              alt={salesProfile.name || "Sales Consultant"}
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 500px"
-              className="object-cover object-top group-hover:scale-102 transition-transform duration-700 ease-out"
-              priority
-            />
-          ) : (
+        <div className="relative aspect-1672/941 w-full rounded-3xl overflow-hidden bg-linear-to-b from-neutral-900 to-neutral-950 border border-neutral-800/80 flex items-center justify-center group shadow-2xl">
+  
+  {hasImage ? (
+    <Image
+      src={salesProfile.image}
+      alt={salesProfile.name || "Sales Consultant"}
+      fill
+      sizes="(max-width: 768px) 100vw, 600px"
+      className="object-cover group-hover:scale-102 transition-transform duration-700 ease-out"
+      priority
+    />
+  ) : (
             <div className="absolute inset-0 flex flex-col items-center justify-center p-6 md:p-8 text-center bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-neutral-900 via-neutral-950 to-neutral-950">
               <div className="p-5 md:p-6 rounded-full bg-neutral-900 border border-neutral-800 text-neutral-500 mb-4 group-hover:text-emerald-400 group-hover:border-emerald-500/30 transition-all duration-500 shadow-inner">
                 <User className="w-14 h-14 md:w-20 md:h-20 stroke-[1.2]" />

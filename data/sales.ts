@@ -1,15 +1,15 @@
 export const salesProfile = {
-  name: "Adryan Jaecoo Center",
+  name: "Adrian Jaecoo Gubeng",
   position: "Jaecoo Sales Consultant",
   showroom: "Jaecoo Gubeng Surabaya",
-  address: "Jl. Sulawesi No. 33-35, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281", // Alamat resmi lokasi Gubeng tersebut
+  address: "Jl. Sulawesi No. 33-37, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281", // Alamat resmi lokasi Gubeng tersebut
   phone: "6281292081113",
   facebook: "https://www.facebook.com/share/17Q4QLgGHD/",
   whatsapp: "https://wa.me/6281292081113",
-  tiktok: "tiktok.com/@jaecoosurabayacenter",
+  tiktok: "https://tiktok.com/@jaecoosurabayacenter",
   email: "ryan.maestro93@gmail.com",
   instagram: "https://instagram.com/jaecoo.surabaya.pusat",
-  image: "/sales/rian.jpg",
+  image: "/sales/rian1.png",
   description:
     "Saya siap membantu Anda mendapatkan informasi terbaru mengenai unit Jaecoo, promo, konsultasi kendaraan, hingga proses test drive.",
   services: [
