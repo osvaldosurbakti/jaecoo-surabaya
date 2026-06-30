@@ -63,7 +63,7 @@ export default function CarsCTA() {
 
           {/* TOMBOL SEKUNDER: DIUBAH KE HALAMAN/SECTION CONTACT SALES */}
           <Link
-            href="/#consultant" // Diarahkan ke ID #consultant agar pas dengan section SalesProfile Anda sebelumnya
+            href="/contact" // Diarahkan ke ID #consultant agar pas dengan section SalesProfile Anda sebelumnya
             className="w-full sm:w-auto bg-transparent hover:bg-neutral-900 text-neutral-300 hover:text-white border border-neutral-800 hover:border-neutral-700 px-10 py-4.5 md:py-5 text-xs font-bold uppercase tracking-[3px] transition-all duration-300 block text-center rounded-none"
           >
             Contact Our Sales
