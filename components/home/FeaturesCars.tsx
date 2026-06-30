@@ -120,7 +120,7 @@ export default function FeaturedCars() {
         {/* ─── BOTTOM CALL TO ACTION (CTA) ─── */}
         <div className="mt-10 md:mt-14 text-center px-4">
           <a
-            href="#contact"
+            href="contact"
             className="inline-block w-full sm:w-auto bg-white text-black px-10 py-4 rounded-full font-semibold shadow-lg hover:bg-neutral-200 active:scale-98 transition-all duration-200 text-sm md:text-base"
           >
             Book Test Drive
