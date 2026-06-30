@@ -78,7 +78,7 @@ export default function FeaturedCars() {
                         quality={90}
                         // Menggunakan object-contain + p-4 di atas agar gambar render mobil diler tidak terpotong bagian bumper/spionnya
                         className="object-contain object-center p-2 group-hover:scale-102 transition-transform duration-500 ease-out"
-                        priority={index === 0}
+                        priority={index < 3}
                       />
                     </Link>
 

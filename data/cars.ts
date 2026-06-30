@@ -74,7 +74,7 @@ export const cars: CarType[] = [
       combinedRange: "Up to 1,300+ Km",
       charging: "Mendukung DC Fast Charging (30% ke 80% dalam 20 menit)",
     },
-    brochureUrl: "/brochure/Flyer-J8-Ardis-SHS-P.pdf",
+    brochureUrl: "/brochure/J8-Ardis.pdf",
     videoEmbedId: "BQleT9cL9QQ", // JAECOO J8 SHS ARDIS (Bisa Jadi Genset)
   },
   {
@@ -109,8 +109,8 @@ export const cars: CarType[] = [
       totalTorque: "385 Nm",
       acceleration: "0-100 km/h dalam 7.9 Detik",
     },
-    brochureUrl: "/brochure/Flyer-J8-Ardis.pdf",
-    videoEmbedId: "JV7gKDa_ylM", // AJAK JEJE DAN OM MOBI BERTUALANG JAECOO J8 AWD
+    brochureUrl: "/brochure/J8.pdf",
+    videoEmbedId: "JV7gKDa_ylM", 
   },
   {
     id: 3,
@@ -145,6 +145,7 @@ export const cars: CarType[] = [
       pureEvRange: "Up to 420 Km",
       charging: "DC Fast Charging (30% - 80% dalam 28 menit)",
     },
+    brochureUrl: "/brochure/J5.pdf",
     videoEmbedId: "3IWzGwAowtI", // JAECOO J5 EV (Mirip Evoque)
   },
   {
@@ -180,6 +181,7 @@ export const cars: CarType[] = [
       pureEvRange: "Up to 88 Km (Varian SHS)",
       combinedRange: "Up to 1,200 Km (Varian SHS)",
     },
+    brochureUrl: "/brochure/J7.pdf",
     videoEmbedId: "gZHqEnhzON0", // In Depth Tour Jaecoo J7 AWD #IIMS2025
   },
 ];

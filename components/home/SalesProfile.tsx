@@ -75,7 +75,7 @@ export default function SalesProfile() {
             </p>
             <p className="flex items-center gap-2">
               <MapPin className="w-3.5 h-3.5 text-neutral-500 shrink-0" />
-              {salesProfile?.showroom || "Jaecoo Gubeng Surabaya"}
+              {salesProfile?.showroom || "Jaecoo Jatim"}
             </p>
           </div>
 

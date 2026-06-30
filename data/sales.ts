@@ -1,5 +1,5 @@
 export const salesProfile = {
-  name: "Adrian Jaecoo Gubeng",
+  name: "Adrian Jaecoo Jatim",
   position: "Jaecoo Sales Consultant",
   showroom: "Jaecoo Gubeng Surabaya",
   address: "Jl. Sulawesi No. 33-37, Gubeng, Kec. Gubeng, Surabaya, Jawa Timur 60281", // Alamat resmi lokasi Gubeng tersebut
