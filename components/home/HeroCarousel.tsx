@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image"; // 1. Import komponen Image Next.js
 import { carouselData } from "@/data/carousel";
 import { salesProfile } from "@/data/sales";
 
@@ -62,27 +63,35 @@ export default function HeroCarousel() {
               <div key={item.id} className="relative min-w-full h-full select-none">
                 
                 {/* ─── IMAGE CONTAINER RESPONSIVE ─── */}
-                <div className="absolute inset-0 w-full h-full bg-neutral-950 flex justify-center items-center">
+                <div className="absolute inset-0 w-full h-full bg-neutral-950">
                   
-                  {/* GAMBAR UNTUK MOBILE */}
-                  <img
-                    src={item.imageMobile}
-                    alt={item.title}
-                    className="block md:hidden w-full h-full object-cover object-center opacity-100"
-                    loading={index === 0 ? "eager" : "lazy"}
-                  />
+                  {/* 2. Optimasi Gambar Mobile dengan Next.js Image */}
+                  <div className="block md:hidden relative w-full h-full">
+                    <Image
+                      src={item.imageMobile}
+                      alt={`${item.title} - Jaecoo Surabaya`}
+                      fill
+                      sizes="100vw"
+                      priority={index === 0} // Menggantikan eager loading untuk slide pertama
+                      className="object-cover object-center opacity-100"
+                    />
+                  </div>
 
-                  {/* GAMBAR UNTUK DESKTOP */}
-                  <img
-                    src={item.imageDesktop}
-                    alt={item.title}
-                    className="hidden md:block w-full h-full object-cover object-center opacity-100"
-                    loading={index === 0 ? "eager" : "lazy"}
-                  />
+                  {/* 3. Optimasi Gambar Desktop dengan Next.js Image */}
+                  <div className="hidden md:block relative w-full h-full">
+                    <Image
+                      src={item.imageDesktop}
+                      alt={`${item.title} - Jaecoo Jawa Timur`}
+                      fill
+                      sizes="100vw"
+                      priority={index === 0} // Menggantikan eager loading untuk slide pertama
+                      className="object-cover object-center opacity-100"
+                    />
+                  </div>
                   
                 </div>
 
-                {/* ─── BUTTON CONTENT (Diposisikan di bawah tengah agar tidak menutupi info gambar) ─── */}
+                {/* ─── BUTTON CONTENT ─── */}
                 <div className="absolute inset-x-0 bottom-24 md:bottom-28 z-10 flex justify-center px-6">
                   <div 
                     className={`w-full max-w-xs sm:max-w-md transform transition-all duration-1000 flex justify-center ${
