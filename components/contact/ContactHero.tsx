@@ -55,7 +55,7 @@ export default function ContactHero() {
 
   {/* Tombol Sekunder -> Menuju ke Location */}
   <a
-    href="#location"
+    href="#showroom-location"
     className="w-full sm:w-auto border border-neutral-800 hover:border-neutral-500 bg-neutral-900/20 hover:bg-neutral-900 text-neutral-300 hover:text-white px-8 md:px-10 py-3.5 md:py-4.5 text-[11px] md:text-xs font-bold uppercase tracking-[2px] md:tracking-[3px] transition-all duration-300 text-center rounded-none"
   >
     Locate Showroom
