@@ -51,10 +51,10 @@ export default function SalesProfile() {
             </div>
           )}
 
-          {/* Aksentuasi lencana verifikasi sales */}
-          <div className="absolute top-3 left-3 md:top-4 md:left-4 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-neutral-900/90 border border-white/5 text-[9px] md:text-[10px] uppercase tracking-wider font-semibold text-gray-400 backdrop-blur-md select-none">
-            <Award className="w-3 md:w-3.5 h-3 md:h-3.5 text-emerald-400" /> Verified Sales
-          </div>
+{/* Aksentuasi lencana verifikasi sales */}
+<div className="absolute bottom-2.5 left-2.5 md:bottom-4 md:left-4 inline-flex items-center gap-1 px-1.5 py-0.5 md:px-2.5 md:py-1 rounded-md bg-neutral-900/90 border border-white/5 text-[8px] md:text-[10px] uppercase tracking-wider font-semibold text-gray-400 backdrop-blur-md select-none">
+  <Award className="w-2.5 md:w-3.5 h-2.5 md:h-3.5 text-emerald-400" /> Verified Sales
+</div>
         </div>
 
         {/* ─── CONTENT AREA ─── */}

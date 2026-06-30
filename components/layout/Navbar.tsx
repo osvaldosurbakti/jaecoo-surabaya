@@ -51,7 +51,7 @@ export default function Navbar() {
       <Link href="/" onClick={closeMenu} className="group flex items-center gap-2 z-50 select-none">
         <span className="h-2 w-2 bg-emerald-500 rounded-full group-hover:scale-150 transition-transform duration-300" />
         <h1 className="text-[11px] sm:text-xs md:text-sm font-black tracking-[3px] md:tracking-[4px] text-white uppercase whitespace-nowrap">
-          JAECOO <span className="text-emerald-400 font-light">JATIM</span>
+          JAECOO <span className="text-emerald-400">JATIM</span>
         </h1>
       </Link>
 

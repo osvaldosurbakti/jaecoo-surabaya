@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-2">
               <span className="h-1.5 w-1.5 bg-emerald-500 rounded-full" />
               <h2 className="font-black text-xs tracking-[4px] uppercase">
-                JAECOO <span className="text-emerald-400 font-light">JATIM</span>
+                JAECOO <span className="text-emerald-400">JATIM</span>
               </h2>
             </div>
             <p className="text-neutral-600 text-[11px] font-light leading-relaxed">
